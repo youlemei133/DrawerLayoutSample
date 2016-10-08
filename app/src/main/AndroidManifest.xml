@@ -17,7 +17,14 @@
         </activity>
         <activity android:name=".DrawerLayoutActivity"/>
         <activity android:name=".NavigationActivity"/>
-        <activity android:name=".ToolBarActivity"/>
+        <!-- android:parentActivityName 指定Navigation按钮，返回的父Activity, 该属性是在4.1中添加进来的-->
+        <activity android:name=".ToolBarActivity"
+            android:parentActivityName=".MainActivity"
+            />
+        <!-- 指定Navigation按钮，返回的父Activity,为了兼容4.1以下的版本-->
+       <meta-data android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity"
+            />
     </application>
 
 </manifest>
