@@ -25,6 +25,15 @@ public class MainActivity extends Activity {
             case R.id.bt_toolBar:
                 startActivity(new Intent(this,ToolBarActivity.class));
                 break;
+            case R.id.bt_coordinaryLayout:
+                startActivity(new Intent(this,CoordinaryLayoutActivity.class));
+                break;
+            case R.id.bt_appBarLayout:
+                startActivity(new Intent(this,AppBarLayoutActivity.class));
+                break;
+            case R.id.bt_collapsingToolbarLayout:
+                startActivity(new Intent(this,CollapsingToolbarLayoutActivity.class));
+                break;
         }
     }
 

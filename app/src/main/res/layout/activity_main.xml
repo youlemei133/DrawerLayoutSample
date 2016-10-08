@@ -26,5 +26,26 @@
     android:onClick="onClick"
     android:id="@+id/bt_toolBar"
     />
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="CoordinaryLayout"
+    android:onClick="onClick"
+    android:id="@+id/bt_coordinaryLayout"
+    />
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="AppBarLayout"
+    android:onClick="onClick"
+    android:id="@+id/bt_appBarLayout"
+    />
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="CollapsingToolbarLayout"
+    android:onClick="onClick"
+    android:id="@+id/bt_collapsingToolbarLayout"
+    />
 
 </LinearLayout>

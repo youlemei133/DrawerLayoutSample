@@ -25,6 +25,9 @@
        <meta-data android:name="android.support.PARENT_ACTIVITY"
             android:value=".MainActivity"
             />
+        <activity android:name=".CoordinaryLayoutActivity"/>
+        <activity android:name=".AppBarLayoutActivity"/>
+        <activity android:name=".CollapsingToolbarLayoutActivity"/>
     </application>
 
 </manifest>

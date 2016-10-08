@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item android:id="@+id/scroll"
+          android:title="scroll"
+          app:showAsAction="never"
+        />
+    <item android:id="@+id/enterAlways"
+          android:title="enterAlways"
+          app:showAsAction="never"
+        />
+    <item android:id="@+id/exitUntilCollapsed"
+          android:title="exitUntilCollapsed"
+          app:showAsAction="never"
+        />
+    <item android:id="@+id/enterAlwaysCollapsed"
+          android:title="enterAlwaysCollapsed"
+          app:showAsAction="never"
+        />
+</menu>
