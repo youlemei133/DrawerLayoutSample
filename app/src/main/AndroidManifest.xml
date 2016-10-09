@@ -27,7 +27,9 @@
             />
         <activity android:name=".CoordinaryLayoutActivity"/>
         <activity android:name=".AppBarLayoutActivity"/>
-        <activity android:name=".CollapsingToolbarLayoutActivity"/>
+        <activity android:name=".CollapsingToolbarLayoutActivity"
+            android:parentActivityName=".MainActivity"
+            />
     </application>
 
 </manifest>

@@ -4,16 +4,27 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
+    <!--AppBarLayout控制子View会随着其他滑动View的滚动而滚动 -->
+    <!-- app:expanded设置开始时，子View是否完全展开-->
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
+        android:layout_height="wrap_content"
+        app:expanded="true"
+        android:id="@+id/appBarLayout"
+        >
+        <!-- contentScrim，当收缩时ToolBar的背景色-->
+        <!-- collapsedTitleGravity，收缩时ToolBar标题的Gravity-->
+        <!-- expandedTitleGravity,展开时ToolBar标题的Gravity-->
+        <!-- layout_collapseMode，在子View中设置该属性，表示折叠的模式-->
         <android.support.design.widget.CollapsingToolbarLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_scrollFlags="exitUntilCollapsed|scroll"
             app:statusBarScrim="@android:color/transparent"
+            app:contentScrim="@color/colorPrimary"
+            app:collapsedTitleGravity="center_vertical"
+            app:expandedTitleGravity="center_horizontal|bottom"
+            app:expandedTitleMarginBottom="10dp"
             >
 
             <ImageView
@@ -30,6 +41,7 @@
                 app:popupTheme="@style/ToolbarPopupTheme"
                 app:title="标题"
                 app:layout_collapseMode="pin"
+                android:id="@+id/toolBar"
                 />
         </android.support.design.widget.CollapsingToolbarLayout>
     </android.support.design.widget.AppBarLayout>
