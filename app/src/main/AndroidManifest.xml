@@ -30,6 +30,9 @@
         <activity android:name=".CollapsingToolbarLayoutActivity"
             android:parentActivityName=".MainActivity"
             />
+        <activity android:name=".TabLayoutActivity"
+            android:parentActivityName=".MainActivity"
+            />
     </application>
 
 </manifest>

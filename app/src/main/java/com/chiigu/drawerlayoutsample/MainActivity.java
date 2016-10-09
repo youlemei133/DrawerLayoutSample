@@ -3,6 +3,7 @@ package com.chiigu.drawerlayoutsample;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.TabLayout;
 import android.view.View;
 
 public class MainActivity extends Activity {
@@ -33,6 +34,9 @@ public class MainActivity extends Activity {
                 break;
             case R.id.bt_collapsingToolbarLayout:
                 startActivity(new Intent(this,CollapsingToolbarLayoutActivity.class));
+                break;
+            case R.id.bt_tabLayout:
+                startActivity(new Intent(this,TabLayoutActivity.class));
                 break;
         }
     }
